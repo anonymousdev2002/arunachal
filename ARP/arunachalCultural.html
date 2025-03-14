@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tourism & Attractions</title>
+    <style>
+         body {
+            margin: 0;
+            background: linear-gradient(135deg, #1b1b1b, #333);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
+        }
+        .hero {
+            height: 500px;
+            background: url('https://www.kipepeo.in/wp-content/uploads/arunachal-festival-01.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero span {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.8);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        .content {
+            padding: 50px;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            
+            
+        }
+        h2{
+        display: flex;
+        justify-content: center;
+      }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+        }
+        ul li {
+            transition: all 0.3s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+            color: #ff9800;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+        }
+        .scroll-top:hover {
+            background: #ff5722;
+            transform: scale(1.1);
+        }
+        @media only screen and (max-width: 600px) {
+            header{
+                font-size: 12px;
+            }
+            .hero{
+                font-size: 18px;
+                height: 200px;
+            }
+            .content{
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Arunachal Pradesh Cultural Heritage</header>
+    <div class="hero">
+        <span>Preserving Tradition and Celebrating Diversity</span>
+    </div>
+    <div class="content">
+        <h2>Rich Cultural Legacy</h2>
+        <p>Arunachal Pradesh, located in the northeastern region of India, is home to a vibrant cultural heritage shaped by its diverse ethnic communities. The state is known for its indigenous traditions, festivals, music, dance, and craftsmanship.</p>
+        <p>The people of Arunachal Pradesh celebrate a variety of festivals that reflect their rich cultural identity. Major festivals include Losar, Nyokum, Dree, Solung, and Reh, each representing the unique customs of different tribes.</p>
+        <p>Traditional dance forms such as Aji Lamu, Popir, Rikhampada, and Buiya are an integral part of cultural celebrations, often performed with colorful attire and rhythmic beats.</p>
+        <p>The state is renowned for its unique handicrafts and handloom industry. Indigenous artisans produce exquisite textiles, bamboo crafts, wooden carvings, and pottery, which showcase their artistic excellence.</p>
+        <p>Monasteries and historical sites, including the famous Tawang Monastery, add to the spiritual and architectural richness of Arunachal Pradesh. These sites serve as important centers for religious and cultural activities.</p>
+        <img src="https://www.kipepeo.in/wp-content/uploads/arunachal-festival-03.jpg" alt="Traditional Dance Performance">
+        <h2>Major Cultural Elements</h2>
+        <ul>
+            <li>Festivals - Celebrations like Losar, Nyokum, Solung, and Reh reflect tribal traditions.</li>
+            <li>Traditional Dance - Popular forms include Aji Lamu, Popir, Buiya, and Chalo dances.</li>
+            <li>Music - Folk songs, tribal instruments, and chanting form the essence of Arunachal's music.</li>
+            <li>Handloom & Handicrafts - Weaving, bamboo work, wood carving, and pottery are prominent.</li>
+            <li>Monasteries & Spirituality - Tawang Monastery and other Buddhist sites are cultural landmarks.</li>
+            <li>Tribal Heritage - Over 26 major tribes and numerous sub-tribes preserve unique traditions.</li>
+            <li>Oral Literature - Folk tales, myths, and legends are passed down through generations.</li>
+            <li>Traditional Attire - Distinctive tribal costumes with intricate designs and bright colors.</li>
+            <li>Local Cuisine - Dishes like Thukpa, Zan, Pika Pila, and bamboo shoot-based delicacies.</li>
+            <li>Martial Arts - Traditional combat techniques practiced by some indigenous groups.</li>
+            <li>Religious Practices - A mix of animism, Buddhism, Hinduism, and Christianity.</li>
+            <li>Ethnic Architecture - Houses built using bamboo, cane, and wood reflect tribal styles.</li>
+            <li>Customs & Rituals - Birth, marriage, and death ceremonies have distinct tribal variations.</li>
+            <li>Folklore & Legends - Myths and hero tales that shape the region's cultural identity.</li>
+            <li>Performing Arts - Storytelling, mask dances, and dramatized folk performances.</li>
+            <li>Textile Industry - Traditional weaving techniques producing ethnic designs.</li>
+            <li>Craftsmanship - Jewelry making, cane and bamboo weaving, and stone carving.</li>
+            <li>Community Gatherings - Clan-based events, fairs, and cultural exhibitions.</li>
+            <li>Heritage Conservation - Efforts to preserve tribal languages, art, and customs.</li>
+            <li>Tourism & Cultural Exchange - Promoting heritage tourism to showcase Arunachal’s traditions.</li>
+        </ul>
+    </div>
+
+
+    <div class="scroll-top" onclick="scrollToTop()">&#8679;</div>
+    <script>
+        window.onscroll = function() {
+            let scrollBtn = document.querySelector('.scroll-top');
+            if (document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

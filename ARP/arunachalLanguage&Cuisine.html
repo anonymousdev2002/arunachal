@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tourism & Attractions</title>
+    <style>
+         body {
+            margin: 0;
+         
+            background: linear-gradient(135deg, #1b1b1b, #333);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
+        }
+        .hero {
+            height: 500px;
+            background: url('https://images.careerindia.com/img/2024/02/mayur-more-odpi6y7rgp4-unsplash1-1708083892.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 8px white;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero span {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.8);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        .content {
+            padding: 50px;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            
+            
+        }
+        h2{
+        display: flex;
+        justify-content: center;
+      }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+        }
+        ul li {
+            transition: all 0.3s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+            color: #ff9800;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+        }
+        .scroll-top:hover {
+            background: #ff5722;
+            transform: scale(1.1);
+        }
+       
+        @media only screen and (max-width: 600px) {
+            header{
+                font-size: 12px;
+            }
+            .hero{
+                font-size: 18px;
+                height: 200px;
+            }
+            .content{
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Arunachal Pradesh Language & Cuisine</header>
+    <div class="hero">
+        <span>Exploring Linguistic Diversity and Culinary Delights</span>
+    </div>
+    <div class="content">
+        <h2>Diverse Linguistic Landscape</h2>
+        <p>Arunachal Pradesh is a land of immense linguistic diversity, with over 50 distinct languages spoken by various tribal communities. The state is home to multiple language families, including Tibeto-Burman, Mon-Khmer, and Indo-Aryan influences.</p>
+        <p>Some of the widely spoken indigenous languages include Nyishi, Adi, Apatani, Monpa, Mishmi, and Galo. Each language carries a rich oral tradition, encompassing folklore, songs, and historical narratives passed down through generations.</p>
+        <p>Hindi and English serve as the official languages of administration and education, promoting communication across different ethnic groups. Despite modernization, efforts are being made to preserve and document the indigenous languages of the region.</p>
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202009/20200913_112901_1200x768.jpeg?size=690:388" alt="Traditional Script">
+        <h2>Authentic Cuisine</h2>
+        <p>The cuisine of Arunachal Pradesh reflects the region’s rich biodiversity and traditional cooking methods. The food is primarily organic, with an emphasis on locally available ingredients such as bamboo shoots, rice, millet, meat, and fermented products.</p>
+        <p>Staple foods include steamed rice, along with an assortment of meat and vegetable-based dishes. Fermented soybeans, dried fish, and smoked meats are integral to the traditional diet.</p>
+        <p>Some of the most popular traditional dishes include Thukpa, a noodle soup with vegetables and meat; Zan, a millet-based porridge; Pika Pila, a spicy pickle made from bamboo shoots; and Lukter, a dish of dry meat seasoned with local spices.</p>
+        <img src="https://arunachallivingheritage.com/uploads/images/1663066752Khampti_Food-(2).jpg" alt="Traditional Cuisine">
+        <h2>Major Linguistic and Culinary Elements</h2>
+        <ul>
+            <li>Languages - Nyishi, Adi, Apatani, Monpa, Galo, Mishmi, and more.</li>
+            <li>Official Languages - Hindi and English are widely used for communication.</li>
+            <li>Oral Traditions - Folk tales, songs, and indigenous storytelling practices.</li>
+            <li>Traditional Scripts - Efforts to document and preserve native languages.</li>
+            <li>Staple Foods - Rice, millet, maize, and root vegetables form the diet base.</li>
+            <li>Popular Dishes - Thukpa, Zan, Pika Pila, Lukter, and bamboo shoot delicacies.</li>
+            <li>Fermented Foods - Local specialties include fermented soybeans, cheese, and meats.</li>
+            <li>Meat Dishes - Pork, fish, and yak meat are commonly consumed in various preparations.</li>
+            <li>Tribal Beverages - Apong (rice beer) and Chhang are traditional drinks.</li>
+            <li>Cooking Techniques - Smoking, fermenting, and boiling are predominant methods.</li>
+            <li>Herbal Ingredients - The cuisine includes medicinal herbs and wild vegetables.</li>
+            <li>Community Feasts - Festivals and gatherings often feature large traditional meals.</li>
+            <li>Influences - Tibetan, Burmese, and Assamese culinary traditions influence local dishes.</li>
+            <li>Preservation Efforts - Language documentation and food heritage projects.</li>
+            <li>Food Tourism - Promoting local cuisine through culinary experiences.</li>
+        </ul>
+    </div>
+
+
+    <div class="scroll-top" onclick="scrollToTop()">&#8679;</div>
+    <script>
+        window.onscroll = function() {
+            let scrollBtn = document.querySelector('.scroll-top');
+            if (document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

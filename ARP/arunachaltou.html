@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tourism & Attractions</title>
+    <style>
+         body {
+            margin: 0;
+         
+            background: linear-gradient(135deg, #1b1b1b, #333);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
+        }
+        .hero {
+            height: 500px;
+            background: url('https://www.travelandtourworld.com/wp-content/uploads/2024/10/freepik__candid-image-photography-natural-textures-highly-r__44238-850x485.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 45px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero span {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.8);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        .content {
+            padding: 50px;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            
+            
+        }
+        h2{
+        display: flex;
+        justify-content: center;
+      }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+        }
+        ul li {
+            transition: all 0.3s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+            color: #ff9800;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+        }
+        .scroll-top:hover {
+            background: #ff5722;
+            transform: scale(1.1);
+        }
+        @media only screen and (max-width: 600px) {
+            header{
+                font-size: 12px;
+            }
+            .hero{
+                font-size: 18px;
+                height: 200px;
+            }
+            .content{
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Arunachal Pradesh Tourism & Attractions</header>
+    <div class="hero">
+        <span>Experience the Unexplored Beauty</span>
+    </div>
+    <div class="content">
+        <h2>Must-Visit Destinations</h2>
+        <p>Arunachal Pradesh, nestled in the northeastern corner of India, is a paradise for nature lovers, adventure seekers, and culture enthusiasts. The state is known for its breathtaking landscapes, rich tribal heritage, and vibrant festivals.</p>
+        <p>From the serene monasteries of Tawang to the lush green valleys of Ziro, the state offers a diverse range of travel experiences. Arunachal Pradesh is home to some of the highest peaks, pristine lakes, and untouched forests that attract visitors from across the globe.</p>
+        <p>One of the major highlights of the region is the Tawang Monastery, the largest monastery in India, which offers a glimpse into Tibetan Buddhist culture. The mystical Sela Pass, with its snow-covered peaks and stunning vistas, is another must-visit location.</p>
+        <p>For wildlife enthusiasts, the Namdapha National Park is a treasure trove of biodiversity, sheltering rare species such as the snow leopard and red panda. Adventure lovers can embark on thrilling treks, river rafting in the Siang River, and camping in the unexplored meadows.</p>
+        <p>The rich cultural heritage of the state is reflected in its numerous festivals like Losar, Solung, and Nyokum. These vibrant celebrations, featuring traditional music, dance, and rituals, provide an immersive experience of Arunachal's indigenous cultures.</p>
+        <img src="https://images.cnbctv18.com/uploads/2024/09/arunachal-2024-09-8af592d2884e757250fd7397dc06bf8b.jpg" alt="Ancient Monastery">
+        <h2>Top Attractions</h2>
+        <ul>
+            <li>Tawang Monastery - A stunning Tibetan Buddhist monastery nestled in the mountains.</li>
+            <li>Sela Pass - A breathtaking high-altitude mountain pass offering spectacular views.</li>
+            <li>Ziro Valley - A UNESCO World Heritage site known for its scenic beauty and Apatani culture.</li>
+            <li>Namdapha National Park - A biodiversity hotspot with unique flora and fauna.</li>
+            <li>Dirang - A picturesque valley known for its hot springs and monasteries.</li>
+            <li>Bomdila - Offers panoramic views of the Himalayan ranges and vibrant Buddhist culture.</li>
+            <li>Pasighat - The oldest town in Arunachal Pradesh, famous for river rafting on the Siang River.</li>
+            <li>Roing - A charming town with breathtaking lakes, waterfalls, and archaeological sites.</li>
+            <li>Mechuka - A hidden gem surrounded by snow-capped peaks and ancient monasteries.</li>
+            <li>Pakke Wildlife Sanctuary - A haven for wildlife lovers with a rich variety of species.</li>
+            <li>Itanagar - The capital city known for Ita Fort, Ganga Lake, and vibrant markets.</li>
+            <li>Glow Lake - A pristine lake surrounded by dense forests and snow-clad mountains.</li>
+            <li>Anini - A remote destination offering surreal landscapes and tribal interactions.</li>
+            <li>Bhismaknagar - An ancient archaeological site with historical significance.</li>
+            <li>Madhuri Lake - A stunning glacial lake named after Bollywood actress Madhuri Dixit.</li>
+            <li>Golden Pagoda - A majestic Buddhist temple reflecting Myanmar-style architecture.</li>
+            <li>Parshuram Kund - A sacred pilgrimage site with mythological significance.</li>
+            <li>Dibang Valley - Known for its pristine beauty and rich tribal culture.</li>
+            <li>Sangti Valley - A paradise for birdwatchers and nature enthusiasts.</li>
+            <li>Gorichen Peak - The highest peak in Arunachal Pradesh, perfect for trekking.</li>
+            <li>Jawai Wildlife Sanctuary - Home to exotic bird species and lush greenery.</li>
+            <li>Talley Valley - A picturesque landscape ideal for eco-tourism.</li>
+            <li>Mago Village - A remote and untouched hamlet showcasing traditional Monpa culture.</li>
+            <li>Seppa - An offbeat location with mesmerizing waterfalls and rivers.</li>
+            <li>Pakhui Tiger Reserve - A dense forest reserve home to Bengal tigers.</li>
+            <li>Shungatser Lake - A serene lake offering mesmerizing reflections of the Himalayas.</li>
+            <li>Daying Ering Wildlife Sanctuary - A must-visit spot for wildlife photography.</li>
+            <li>West Kameng - A region filled with charming monasteries and breathtaking landscapes.</li>
+            <li>Lekhapani - An old British settlement with fascinating historical remnants.</li>
+        </ul>
+    </div>
+
+    <div class="scroll-top" onclick="scrollToTop()">&#8679;</div>
+    <script>
+        window.onscroll = function() {
+            let scrollBtn = document.querySelector('.scroll-top');
+            if (document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

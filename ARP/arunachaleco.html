@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Tourism & Attractions</title>
+    <style>
+         body {
+            margin: 0;
+         
+            background: linear-gradient(135deg, #1b1b1b, #333);
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 10px rgba(255, 152, 0, 0.5); }
+            to { box-shadow: 0 0 20px rgba(255, 152, 0, 1); }
+        }
+        .hero {
+            height: 500px;
+            background: url('https://cdn.nishtyainfotech.com/content/stories/thumb/67cee7c640c48.webp') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero span {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.8);
+            animation: pulse 2s infinite alternate;
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        .content {
+            padding: 50px;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            
+            
+        }
+        h2{
+        display: flex;
+        justify-content: center;
+      }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .content img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+        }
+        ul li {
+            transition: all 0.3s ease-in-out;
+        }
+        ul li:hover {
+            transform: translateX(10px);
+            color: #ff9800;
+        }
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+        }
+        .scroll-top:hover {
+            background: #ff5722;
+            transform: scale(1.1);
+        }
+        @media only screen and (max-width: 600px) {
+            header{
+                font-size: 12px;
+            }
+            .hero{
+                font-size: 18px;
+                height: 200px;
+            }
+            .content{
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Arunachal Pradesh Economy & Industries</header>
+    <div class="hero">
+        <span>Driving Growth Through Sustainable Development</span>
+    </div>
+    <div class="content">
+        <h2>Key Economic Sectors</h2>
+        <p>Arunachal Pradesh, located in the northeastern region of India, has a diverse economy driven by agriculture, hydropower, tourism, and forestry. The state is rich in natural resources, offering immense potential for industrial growth and economic development.</p>
+        <p>The agriculture sector remains the backbone of the state's economy, with a majority of the population engaged in farming. Major crops include rice, maize, millet, and horticultural produce like oranges, apples, and kiwis.</p>
+        <p>Hydropower is a significant contributor to Arunachal Pradesh's economy, with the state possessing vast water resources ideal for generating renewable energy. Several large-scale hydropower projects have been initiated to harness this potential.</p>
+        <p>Tourism plays a vital role in economic development, attracting visitors with its breathtaking landscapes, monasteries, and adventure opportunities. The sector generates employment and contributes to the local economy.</p>
+        <p>The forest industry is another major contributor, with a rich reserve of timber and non-timber forest products. Sustainable forestry practices are being encouraged to balance economic benefits with environmental conservation.</p>
+        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-05/19/full/1558285824-0024.jpg" alt="Hydropower Project">
+        <h2>Major Industries</h2>
+        <ul>
+            <li>Agriculture & Horticulture - Major cash crops include rice, maize, oranges, and apples.</li>
+            <li>Hydropower - Arunachal Pradesh has one of the highest hydroelectric potentials in India.</li>
+            <li>Tourism - Eco-tourism, adventure tourism, and cultural tourism drive economic activity.</li>
+            <li>Forestry & Timber - Sustainable forest management supports the economy and employment.</li>
+            <li>Handloom & Handicrafts - Indigenous communities produce traditional textiles and crafts.</li>
+            <li>Mining - Rich in minerals like coal, dolomite, and graphite, offering industrial opportunities.</li>
+            <li>Tea Plantations - The state is emerging as a tea-producing hub, with high-quality organic tea.</li>
+            <li>Fisheries - Promoting fish farming and aquaculture to boost rural incomes.</li>
+            <li>Food Processing - Encouraging agro-based industries to add value to local produce.</li>
+            <li>Sericulture - Production of high-quality silk, particularly eri and muga silk.</li>
+            <li>Textile Industry - Traditional weaves and modern fabric production contribute to the economy.</li>
+            <li>Handicraft Cooperatives - Supporting artisans to preserve and promote traditional crafts.</li>
+            <li>Livestock & Dairy - Expanding dairy farming and poultry production for economic growth.</li>
+            <li>Infrastructure Development - Investments in roads, bridges, and urbanization drive progress.</li>
+            <li>Renewable Energy - Apart from hydropower, solar and wind energy projects are being developed.</li>
+            <li>IT & Digital Economy - Government initiatives are promoting digital transformation and startups.</li>
+            <li>Export-Oriented Industries - Promoting trade of agricultural and handicraft products.</li>
+            <li>Organic Farming - Encouraging sustainable and chemical-free farming practices.</li>
+            <li>Biotechnology - Exploring medicinal plant-based industries for economic growth.</li>
+            <li>Transport & Logistics - Enhancing connectivity to facilitate trade and industrial expansion.</li>
+        </ul>
+    </div>
+
+    <div class="scroll-top" onclick="scrollToTop()">&#8679;</div>
+    <script>
+        window.onscroll = function() {
+            let scrollBtn = document.querySelector('.scroll-top');
+            if (document.documentElement.scrollTop > 100) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
